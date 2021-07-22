@@ -73,6 +73,7 @@ void incrementacontador(void *end,int n)
       aux->cont = aux->cont + n;
       if(aux->cont == 0)
       {
+        printf("Endereco: %p\t Contador: %d\n",aux->endereco, aux->cont);
         lista=RemoveElemento(lista,aux->endereco);
         break;
       }
